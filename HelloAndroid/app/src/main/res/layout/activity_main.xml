@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jokeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Joke will appear here"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/categoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jokeTextView"
+        android:layout_marginTop="-325dp"
+        android:hint="Enter category" />
+
+    <Button
+        android:id="@+id/getJokeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryEditText"
+        android:layout_marginTop="74dp"
+        android:text="Get Joke" />
+
+    <ImageView
+        android:id="@+id/jokeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getJokeButton"
+        android:layout_marginTop="248dp"
+        android:src="@drawable/img" />
+
+
+</RelativeLayout>
